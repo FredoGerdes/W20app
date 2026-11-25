@@ -27,7 +27,7 @@ Ohne `.env` läuft die App im Demo-Modus: Daten liegen nur im Browser, keine Syn
 
 ### 2. Veröffentlichen über GitHub Pages
 
-1. Im GitHub-Repo: **Settings → Pages → Source: GitHub Actions**.
+1. Im GitHub-Repo: **Settings → Pages → Source: Deploy from a branch**, Branch `gh-pages`, Ordner `/ (root)`.
 2. **Settings → Secrets and variables → Actions → Variables**: `VITE_SUPABASE_URL` und `VITE_SUPABASE_KEY` anlegen
    (beide Werte sind öffentlich, der Schutz liegt in den Datenbankregeln).
 3. Push auf `main` baut und veröffentlicht die App unter `https://<name>.github.io/<repo>/`.
